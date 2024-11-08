@@ -1,4 +1,4 @@
-/* Estilos Generales del Contenedor */
+
 .container1a0{
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 
   
          
-  width: 400px;  /*00000000000000000000000000000000*/
+  width: 400px;  
  
   
   height: 100px;
@@ -19,7 +19,6 @@
   
 }
 
-/* Estilos de las Tarjetas de Productos */
 .cardctm {
   
   background-color: #ffffff;
@@ -27,14 +26,14 @@
   border-radius: 10px;
   margin: 0px ;
   padding: 0px;
-  width: 100%; /* Ajustar según preferencia */
+  width: 100%;
   
   height:auto ;
 
   
 }
 
-.product-infocm > div {/*si  no uso > no funciona */
+.product-infocm > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,14 +47,14 @@
 
 .product-infocm p {
   margin: 5px 0;
-  color: #333; /* Color del texto */
+  color: #333; 
 }
 
 .product-infocm div img {
  
   width: 60px;
   margin-right: 0px;
-  border-radius: 5px; /* Opcional: para bordes redondeados en las imágenes */
+  border-radius: 5px; 
   margin: 5px;
   
 }
@@ -94,10 +93,10 @@
   background-color: #33b300;
 }
 
-/* Estilos para Envío y Total de Productos */
 
 
-@media (max-width: 468px) {/*000000000000000000000000000000*/
+
+@media (max-width: 468px) {
   .container1a0{
     width: 250px;
   }

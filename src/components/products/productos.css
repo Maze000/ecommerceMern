@@ -1,4 +1,4 @@
-/* Estilos generales para la vitrina */
+
 .vitrina-productos {
   display: flex;
   flex-wrap: wrap;
@@ -10,12 +10,12 @@
   margin-top: 100px;
 }
 
-/* Estilos para cada producto individual */
+
 .producton7 {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  width: 300px; /* Ajusta este valor según prefieras */
+  width: 300px; 
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s ease;
 }
@@ -51,7 +51,7 @@
 
 .producton7 button {
   display: block;
-  width: calc(100% - 32px); /* Ajusta al padding del contenedor */
+  width: calc(100% - 32px);
   margin: 0 auto 16px;
   padding: 10px;
   background-color: #0056b3;
