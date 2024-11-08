@@ -3,10 +3,10 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const Product = require('./product.js');
-const {url} = require ('../db/database.js');
+//const {url} = require ('../db/database.js');
 //const url = require ('../db/database.js');
-//mongoose.connect(process.env.MONGODB_URI)
-mongoose.connect(url)
+mongoose.connect(process.env.MONGODB_URI)
+//mongoose.connect(url)
   .then(() => {
     console.log('Conexión a la base de datos exitosa');
 
