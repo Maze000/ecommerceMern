@@ -13,8 +13,8 @@ const MongoStore = require('connect-mongo');
 require('dotenv').config();
 //const url = require ('./db/database.js');
 const { url } = require('./db/database.js');
-mongoose.connect(url)
-//mongoose.connect(process.env.MONGODB_URI)
+//mongoose.connect(url)
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log('Conexión a MongoDB establecida.'))
 .catch(err => console.error('Error al conectar con MongoDB:', err));
 
@@ -31,7 +31,7 @@ app.use(session({
   secret: 'process.env.JUST_SECRET_KEY',
   resave: false,
   saveUninitialized: false,
-  //store: MongoStore.create({ mongoUrl: process.env.MONGODB_URI })
+  store: MongoStore.create({ mongoUrl: process.env.MONGODB_URI })
  // store: MongoStore.create({ mongoUrl:url })
   
 }));
