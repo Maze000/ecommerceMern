@@ -12,7 +12,7 @@ const bodyParser = require('body-parser');
 const MongoStore = require('connect-mongo');
 require('dotenv').config();
 //const url = require ('./db/database.js');
-const { url } = require('./db/database.js');
+//const { url } = require('./db/database.js');
 //mongoose.connect(url)
 mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log('Conexión a MongoDB establecida.'))
